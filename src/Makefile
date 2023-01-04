@@ -12,8 +12,8 @@
 
 OBJDIR	:= ../obj
 CFLAGS	:= -I ../inc -c
-FILES	:= ft_main_screen.c\
-				 ft_cursor_move.c\
+FILES	:= ft_init_screen.c\
+				 ft_case.c\
 
 OBJ		:= $(FILES:%.c=$(OBJDIR)/%.o)
 

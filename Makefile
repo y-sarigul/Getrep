@@ -19,6 +19,8 @@ CFLAGS		:= -Wall -Wextra -Werror -I ./inc -lcurses
 
 $(NAME): $(OBJDIR) $(SRC)
 	@ar -rcs $(NAME) $(OBJDIR)/*.o 
+	@gcc main.c tui.a -o tui -I ./inc -lcurses
+	@./tui
 
 $(OBJDIR):
 	@mkdir -p $(OBJDIR)

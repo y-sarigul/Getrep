@@ -21,9 +21,13 @@
 
 typedef struct s_tui
 {
+  int xMax;
+  int yMax;
+  char c;
+  WINDOW *win;
 } t_tui;
 
-void ft_init_screen();
-void ft_cursor_move();
+void ft_init_screen(t_tui *root);
+void ft_case(t_tui *root);
 
 #endif
